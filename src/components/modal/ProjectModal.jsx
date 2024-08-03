@@ -1,22 +1,30 @@
+/* eslint-disable react/prop-types */
+import { useEffect } from "react";
 import Modal from "react-modal";
 
-/* eslint-disable react/prop-types */
 const ProjectModal = ({ isOpen, onRequestClose, project }) => {
+  //to restrict scrolling to the modal
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [isOpen]);
+
   return (
     <Modal
       isOpen={isOpen}
       onRequestClose={onRequestClose}
       contentLabel="Project Details"
-      className="modal fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-75 p-4"
+      className="modal fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-75 p-4 overflow-y-auto"
       overlayClassName="overlay"
     >
-      <div className="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full">
-        <h2 className="text-2xl font-bold text-center mb-3 text-gray-900 dark:text-gray-100">
+      <div className="bg-white mt-10 p-6 rounded-lg shadow-lg max-w-lg w-full  max-h-screen overflow-y-auto md:mt-0">
+        <h2 className="text-2xl font-bold text-center mb-3 text-gray-900">
           {project.title}
         </h2>
-        <p className="text-base text-gray-800 dark:text-gray-300">
-          {project.details}
-        </p>
+        <p className="text-base text-gray-800 ">{project.details}</p>
         <button
           onClick={onRequestClose}
           className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"

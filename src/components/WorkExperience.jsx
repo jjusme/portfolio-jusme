@@ -112,7 +112,7 @@ const WorkExperience = () => {
           className="w-96  p-5"
           alt="School Management Software"
         />
-        <div className="w-1/2 p-5">
+        <div className="p-5">
           <p className="leading-relaxed font-normal mb-2">
             I had the opportunity to work on a School Management Software (SMS)
             application for a school administration.
@@ -136,7 +136,7 @@ const WorkExperience = () => {
       </h2>
       <div className="flex flex-col items-center justify-center gap-3 md:flex-row">
         <img src={project2} className="w-96  p-5" alt="Uplearning" />
-        <div className="w-1/2 p-5">
+        <div className=" p-5">
           <p className="leading-relaxed font-normal mb-2">
             Uplearning is a technological e-learning platform in Haitian Creole
             aimed at providing educational resources.
@@ -154,7 +154,7 @@ const WorkExperience = () => {
       </h2>
       <div className="flex flex-col items-center justify-center gap-3 md:flex-row">
         <img src={project3} className="w-96  p-5" alt="CRM Software" />
-        <div className="w-1/2 p-5">
+        <div className=" p-5">
           <p className="leading-relaxed font-normal mb-2">
             The CRM software was designed to help businesses manage their
             customer relationships effectively.

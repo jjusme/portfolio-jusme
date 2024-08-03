@@ -15,7 +15,7 @@ const ProjectCard = ({ project }) => {
   };
 
   return (
-    <div className="w-[28rem] h-[26rem]  rounded-xl overflow-hidden shadow-lg bg-white">
+    <div className="w-96 h-[26rem]  rounded-xl overflow-hidden shadow-lg bg-white md:w-[28rem] md:h-[26rem]">
       <img
         className="w-full h-2/3 object-fill"
         src={project.thumbnail}

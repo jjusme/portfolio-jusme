@@ -52,7 +52,7 @@ const Projects = () => {
 
       <div className="flex justify-center">
         <motion.div
-          className="flex gap-16 flex-wrap"
+          className="flex justify-center gap-16 flex-wrap md:justify-between"
           initial="hidden"
           whileInView="visible"
           variants={containerVariants}
