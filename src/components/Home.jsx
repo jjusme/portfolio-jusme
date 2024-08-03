@@ -35,7 +35,7 @@ const Home = () => {
           transition={{ duration: 1, delay: 1 }}
         >
           <div className="flex flex-col justify-center">
-            <h1 className="text-5xl  md:text-7xl font-semibold uppercase tracking-wide">
+            <h1 className="text-3xl  md:text-5xl font-semibold uppercase tracking-wide">
               Junior Jusmé
             </h1>
             <h2 className="pt-2 text-xl md:text-3xl font-semibold">
