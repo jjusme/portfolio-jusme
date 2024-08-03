@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-const Project1Details = () => {
+const Project3Details = () => {
   return (
     <div>
       <p className="leading-relaxed font-semibold mb-2">
@@ -38,4 +38,4 @@ const Project1Details = () => {
   );
 };
 
-export default Project1Details;
+export default Project3Details;

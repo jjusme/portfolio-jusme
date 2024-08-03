@@ -41,6 +41,8 @@ import { LiaSearchPlusSolid } from "react-icons/lia";
 import { CgGym } from "react-icons/cg";
 import { TbBinaryTree } from "react-icons/tb";
 import Project2Details from "../components/modal/Project2Details";
+import Project1Details from "../components/modal/Project1Details";
+import Project3Details from "../components/modal/Project3Details";
 
 export const NAVIGATION_LINKS = [
   { label: "About", href: "#about" },
@@ -171,29 +173,27 @@ export const PROJECTS = [
 
   {
     title: "DSA Learning App",
-    subtitle: "React App to learn and practice DSA.",
+    subtitle: "React App to learn and practice DSA...",
     thumbnail: image2,
     previewLink: "https://dsa-learning-with-js.vercel.app/",
     repoLink: "https://github.com/JusmeJr93/dsa-learning-with-js",
+    details: <Project1Details />,
+  },
+  {
+    title: "AluraFlix",
+    subtitle: "Educational video platform...",
+    thumbnail: image3,
+    previewLink: "https://challenge-aluraflix-nine.vercel.app/",
+    repoLink: "https://github.com/JusmeJr93/challenge-aluraflix",
     details: <Project2Details />,
   },
   {
-    title: "Project 3",
-    subtitle: "A brief description of project 3.",
-    thumbnail: image3,
-    previewLink: "https://example.com/preview3",
-    repoLink: "https://github.com/username/repo3",
-    details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, neque quibusdam adipisci itaque nam cupiditate, in repellat aperiam animi porro delectus placeat dicta, pariatur amet rem! Porro possimus quas in. ",
-  },
-  {
-    title: "Project 4",
-    subtitle: "A brief description of project 4.",
+    title: "Expense Share App",
+    subtitle: "Tool to manage shared expenses...",
     thumbnail: image4,
-    previewLink: "https://example.com/preview1",
-    repoLink: "https://github.com/username/repo1",
-    details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, neque quibusdam adipisci itaque nam cupiditate, in repellat aperiam animi porro delectus placeat dicta, pariatur amet rem! Porro possimus quas in. ",
+    previewLink: "https://expense-share.vercel.app/",
+    repoLink: "https://github.com/JusmeJr93/expense-share",
+    details: <Project3Details />,
   },
 ];
 
