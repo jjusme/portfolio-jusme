@@ -15,10 +15,7 @@ const ProjectCard = ({ project }) => {
   };
 
   return (
-    <div
-      className="w-96 h-[27rem]  rounded-xl overflow-hidden shadow-lg bg-white dark:bg-gray-800"
-      /* onClick={modalIsOpen ? closeModal : ""} */
-    >
+    <div className="w-[28rem] h-[26rem]  rounded-xl overflow-hidden shadow-lg bg-white">
       <img
         className="w-full h-2/3 object-fill"
         src={project.thumbnail}
@@ -28,7 +25,7 @@ const ProjectCard = ({ project }) => {
         <div className="font-bold text-xl text-gray-950 mb-2">
           {project.title}
         </div>
-        <p className="text-black dark:text-gray-300 text-base">
+        <p className="text-black text-base">
           {project.subtitle}{" "}
           <button
             onClick={openModal}
@@ -39,7 +36,7 @@ const ProjectCard = ({ project }) => {
           </button>
         </p>
       </div>
-      <div className="flex justify-between px-6 pt-4 pb-3 bg-gray-100">
+      <div className="flex justify-between px-6 pt-2 pb-3 bg-gray-100">
         <a
           href={project.previewLink}
           className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded mr-2"

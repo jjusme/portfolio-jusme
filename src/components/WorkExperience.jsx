@@ -42,7 +42,7 @@ const WorkExperience = () => {
       </h2>
 
       <p className="mb-4 text-lg leading-relaxed">
-        As a Freelance Frontend Developer, I worked on several projects for the
+        I worked on several projects, as a Freelance Frontend Developer, for the
         technology company
         <a
           href="https://uploadht.com/"

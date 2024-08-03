@@ -8,18 +8,18 @@ const containerVariants = {
     y: 0,
     transition: {
       duration: 1,
-      staggerChildren: 0.5,
+      staggerChildren: 0.1,
     },
   },
 };
 
 const itemVariants = {
-  hidden: { opacity: 0, x: -20 },
+  hidden: { opacity: 0, x: -100 },
   visible: {
     opacity: 1,
     x: 0,
     transition: {
-      duration: 0.2,
+      duration: 1,
     },
   },
 };
@@ -38,34 +38,32 @@ const Skills = () => {
         <h3 className="mb-6 w-fit border-b-2 border-yellow-400 self-center text-center text-2xl lg:text-3xl">
           Technical Skills
         </h3>
-        <div className="md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <motion.div
+          className="md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+          variants={itemVariants}
+        >
           {TECHNICAL_SKILLS.map((skill, index) => (
-            <motion.div
-              key={index}
-              className="mb-8 flex items-center"
-              variants={itemVariants}
-            >
+            <div key={index} className="mb-8 flex items-center">
               {skill.icon}
               <h4 className="px-4 text-xl lg:text-2xl">{skill.name}</h4>
-            </motion.div>
+            </div>
           ))}
-        </div>
+        </motion.div>
 
         <h3 className="mt-12 mb-6  w-fit border-b-2 border-yellow-400 self-center  text-2xl lg:text-3xl">
           Soft Skills
         </h3>
-        <div className="md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <motion.div
+          className="md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+          variants={itemVariants}
+        >
           {SOFT_SKILLS.map((skill, index) => (
-            <motion.div
-              key={index}
-              className="mb-8 flex items-center"
-              variants={itemVariants}
-            >
+            <div key={index} className="mb-8 flex items-center">
               {skill.icon}
               <h4 className="px-4 text-xl lg:text-2xl">{skill.name}</h4>
-            </motion.div>
+            </div>
           ))}
-        </div>
+        </motion.div>
       </motion.div>
     </div>
   );

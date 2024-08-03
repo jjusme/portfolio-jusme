@@ -50,19 +50,21 @@ const Projects = () => {
         how I bring ideas to life through code.
       </motion.p>
 
-      <motion.div
-        className="flex gap-16 flex-wrap"
-        initial="hidden"
-        whileInView="visible"
-        variants={containerVariants}
-        viewport={{ once: true }}
-      >
-        {PROJECTS.map((project, index) => (
-          <motion.div key={index} variants={itemVariants}>
-            <ProjectCard project={project} />
-          </motion.div>
-        ))}
-      </motion.div>
+      <div className="flex justify-center">
+        <motion.div
+          className="flex gap-16 flex-wrap"
+          initial="hidden"
+          whileInView="visible"
+          variants={containerVariants}
+          viewport={{ once: true }}
+        >
+          {PROJECTS.map((project, index) => (
+            <motion.div key={index} variants={itemVariants}>
+              <ProjectCard project={project} />
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
     </div>
   );
 };

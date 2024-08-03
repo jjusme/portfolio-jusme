@@ -22,7 +22,7 @@ const HobbieAccordion = ({
     >
       <div
         className={`flex py-4 px-8 justify-between items-center ${
-          showText ? "bg-gray-900" : "bg-transparent"
+          showText ? "bg-gray-900" : "bg-gray-800"
         }`}
       >
         <p className="text-lg font-semibold">{title}</p>
