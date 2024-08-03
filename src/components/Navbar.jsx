@@ -34,11 +34,11 @@ const Navbar = () => {
     <div>
       <nav className="fixed flex justify-center min-w-full left-0 right-0 top-0 z-50  bg-black/50 backdrop-blur ">
         {/* Desktop and tablet Menu */}
-        <div className="container hidden items-center   py-3 md:flex">
+        <div className="container hidden items-center   py-2 md:flex">
           <div className="flex w-full  justify-between gap-6">
             <div>
               <a href="#">
-                <img src={brand} width={130} alt="logo" />
+                <img src={brand} width={160} alt="logo" />
               </a>
             </div>
             <div>
