@@ -6,6 +6,7 @@ const Project1Details = () => {
         This App is designed to help beginners understand and practice DSA
         through interactive lessons and exercises.
       </p>
+
       <p className="leading-loose">Key technologies and topics used:</p>
       <ul className="list-inside list-disc ml-2">
         <li>
@@ -33,6 +34,18 @@ const Project1Details = () => {
           <span className="font-semibold">CodePen Embedding:</span> Live code
           examples with CodePen.
         </li>
+      </ul>
+
+      <p className="leading-loose mt-4">Key Features:</p>
+      <ul className="list-inside list-disc ml-2">
+        <li>Interactive lessons and exercises</li>
+        <li>Progress tracking and completion status</li>
+        <li>Step-by-step solutions and explanations</li>
+      </ul>
+      <p className="leading-loose mt-4">Challenges Overcome:</p>
+      <ul className="list-inside list-disc ml-2">
+        <li>Ensuring responsive design for different devices</li>
+        <li>Implementing state management for complex interactions</li>
       </ul>
     </div>
   );
