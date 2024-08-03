@@ -1,5 +1,6 @@
 import homePic from "../assets/developer.jpg";
 import myPhoto from "../assets/JusmeJr.jpg";
+import myCV from "../assets/React-Developer-CV-Jusme.pdf";
 import { motion } from "framer-motion";
 import { SOCIAL_MEDIA_LINKS } from "../constants";
 import { FaDownload } from "react-icons/fa6";
@@ -58,10 +59,8 @@ const Home = () => {
                 </motion.a>
               ))}
               <motion.a
-                download
-                href=""
+                href={myCV}
                 target="_blank"
-                rel="noopener noreferrer"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 3.5 }}

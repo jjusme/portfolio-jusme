@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { FaDownload } from "react-icons/fa6";
+import myCV from "../assets/React-Developer-CV-Jusme.pdf";
 
 const About = () => {
   return (
@@ -61,10 +62,12 @@ const About = () => {
         freely exchanged and creativity is encouraged.
       </motion.p>
       <div className="flex justify-center mt-3">
-        <button className="flex gap-2 items-center border border-gray-700 rounded-md py-1 px-3 hover:bg-gray-300 hover:text-black hover:font-semibold">
-          <FaDownload />
-          Download CV
-        </button>
+        <a href={myCV} target="_blank">
+          <button className="flex gap-2 items-center border border-gray-700 rounded-md py-1 px-3 hover:bg-gray-300 hover:text-black hover:font-semibold">
+            <FaDownload />
+            Download CV
+          </button>
+        </a>
       </div>
     </div>
   );
