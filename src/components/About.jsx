@@ -13,6 +13,17 @@ const About = () => {
         About
       </motion.h2>
       <motion.p
+        className="p-4 text-2xl leading-relaxed uppercase"
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
+        React Developer with more than 2 years of experience in developing
+        innovative solutions to build dynamic, responsive, and accessible
+        websites that tell stories tailored to my clients&apos; needs.
+      </motion.p>
+      <motion.p
         className="p-4 text-2xl leading-relaxed"
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -23,18 +34,7 @@ const About = () => {
         beautiful and functional. With a background in civil engineering, I have
         a solid foundation in problem-solving and critical thinking.
       </motion.p>
-      <motion.p
-        className="p-4 text-2xl leading-relaxed"
-        initial={{ opacity: 0, x: -100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1.3 }}
-        viewport={{ once: true }}
-      >
-        Merging my technical skills with my creative vision, I develop
-        innovative solutions to build dynamic, responsive, and accessible
-        websites that tell stories tailored to my clients&apos; needs. And I
-        take pride in writing clean, efficient code and best practices.
-      </motion.p>
+
       <motion.p
         className="p-4 text-2xl leading-relaxed"
         initial={{ opacity: 0, x: -100 }}
@@ -47,6 +47,16 @@ const About = () => {
         design trends by constantly exploring new tools, techniques and
         methodologies. I am dedicated to bringing practical and innovative
         solutions to every challenge.
+      </motion.p>
+      <motion.p
+        className="p-4 text-2xl leading-relaxed"
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.3 }}
+        viewport={{ once: true }}
+      >
+        Merging my technical skills with my creative vision, I take pride in
+        writing clean, efficient code and following best practices.
       </motion.p>
       <motion.p
         className="p-4 text-2xl leading-relaxed"
