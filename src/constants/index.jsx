@@ -47,8 +47,8 @@ import Project3Details from "../components/modal/Project3Details";
 export const NAVIGATION_LINKS = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
-  { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
+  { label: "Experience", href: "#experience" },
   { label: "Hobbies", href: "#hobbies" },
   { label: "Contact", href: "#contact" },
 ];
@@ -162,15 +162,6 @@ export const SOFT_SKILLS = [
 ];
 
 export const PROJECTS = [
-  /* {
-    title: "School Management Software",
-    subtitle: "Dashboard for a school administration.",
-    thumbnail: image1,
-    previewLink: "",
-    repoLink: "",
-    details: <Project1Details />,
-  }, */
-
   {
     title: "DSA Learning App",
     subtitle: "React App to learn and practice DSA...",

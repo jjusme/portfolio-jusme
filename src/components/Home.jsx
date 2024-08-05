@@ -1,6 +1,6 @@
 import homePic from "../assets/developer.jpg";
 import myPhoto from "../assets/JusmeJr.jpg";
-import myCV from "../assets/React-Developer-CV-Jusme.pdf";
+import myCV from "../assets/Junior-Jusme-React-Developer.pdf";
 import { motion } from "framer-motion";
 import { SOCIAL_MEDIA_LINKS } from "../constants";
 import { FaDownload } from "react-icons/fa6";
