@@ -41,6 +41,7 @@ const Navbar = () => {
                 <img src={brand} width={160} alt="logo" />
               </a>
             </div>
+
             <div>
               <ul className="flex items-center gap-6">
                 {NAVIGATION_LINKS.map((item, index) => (

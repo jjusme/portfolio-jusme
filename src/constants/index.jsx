@@ -17,9 +17,10 @@ import {
   SiAxios,
   SiGit,
   SiReactrouter,
+  SiRedux,
   SiStyledcomponents,
 } from "react-icons/si";
-import { DiScrum } from "react-icons/di";
+import { DiMysql, DiScrum } from "react-icons/di";
 import {
   FaBookReader,
   FaNodeJs,
@@ -29,6 +30,7 @@ import {
 } from "react-icons/fa";
 import { BiLogoGmail, BiLogoJavascript } from "react-icons/bi";
 
+import image1 from "../assets/juniorspizza.jpg";
 import image2 from "../assets/dsaApp.jpg";
 import image3 from "../assets/aluraflix.jpg";
 import image4 from "../assets/expense.jpg";
@@ -43,6 +45,7 @@ import { TbBinaryTree } from "react-icons/tb";
 import Project2Details from "../components/modal/Project2Details";
 import Project1Details from "../components/modal/Project1Details";
 import Project3Details from "../components/modal/Project3Details";
+import Project0Details from "../components/modal/Project0Details";
 
 export const NAVIGATION_LINKS = [
   { label: "About", href: "#about" },
@@ -112,6 +115,14 @@ export const TECHNICAL_SKILLS = [
     icon: <BsDatabaseFillGear className="text-4xl text-blue-100" />,
   },
   {
+    name: "Redux",
+    icon: <SiRedux className="text-4xl text-indigo-500" />,
+  },
+  {
+    name: "MySQL",
+    icon: <DiMysql className="text-4xl text-blue-400" />,
+  },
+  {
     name: "Responsive Web Design",
     icon: <FcSmartphoneTablet className="text-4xl" />,
   },
@@ -162,6 +173,14 @@ export const SOFT_SKILLS = [
 ];
 
 export const PROJECTS = [
+  {
+    title: "Junior's Pizza Kitchen",
+    subtitle: "Responsive pizza ordering web app...",
+    thumbnail: image1,
+    previewLink: "https://juniors-pizza-kitchen.vercel.app/",
+    repoLink: "https://github.com/JusmeJr93/juniors-pizza-kitchen",
+    details: <Project0Details />,
+  },
   {
     title: "DSA Learning App",
     subtitle: "React App to learn and practice DSA...",

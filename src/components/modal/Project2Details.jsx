@@ -1,12 +1,14 @@
 const Project2Details = () => {
   return (
     <div>
-      <p className="leading-relaxed font-semibold mb-2">
+      <p className="leading-relaxed mb-2">
         AluraFlix is a video platform application designed to showcase and
         manage video content in various categories.
       </p>
-      <p className="leading-loose">Key technologies and topics used:</p>
-      <ul className="list-inside list-disc ml-2">
+      <p className="leading-loose  italic font-semibold">
+        Key technologies and topics:
+      </p>
+      <ul className="list-outside list-disc ml-2">
         <li>
           <span className="font-semibold">React:</span> To build the user
           interface.
@@ -33,14 +35,16 @@ const Project2Details = () => {
         </li>
       </ul>
 
-      <p className="leading-loose mt-4">Key Features:</p>
-      <ul className="list-inside list-disc ml-2">
+      <p className="leading-loose mt-4  italic font-semibold">Key Features:</p>
+      <ul className="list-outside list-disc ml-2">
         <li>Video categorization and management</li>
         <li>CRUD operations for video content</li>
       </ul>
 
-      <p className="leading-loose mt-4">Challenges Overcome:</p>
-      <ul className="list-inside list-disc ml-2">
+      <p className="leading-loose mt-4  italic font-semibold">
+        Challenges Overcome:
+      </p>
+      <ul className="list-outside list-disc ml-2">
         <li>Implementing video editing and deletion functionality</li>
         <li>Integrating a mock backend for data storage</li>
       </ul>

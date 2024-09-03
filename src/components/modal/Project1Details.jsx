@@ -2,13 +2,15 @@
 const Project1Details = () => {
   return (
     <div>
-      <p className="leading-relaxed font-semibold mb-2">
+      <p className="leading-relaxed mb-2">
         This App is designed to help beginners understand and practice DSA
         through interactive lessons and exercises.
       </p>
 
-      <p className="leading-loose">Key technologies and topics used:</p>
-      <ul className="list-inside list-disc ml-2">
+      <p className="leading-loose italic font-semibold">
+        Key technologies and topics:
+      </p>
+      <ul className="list-outside list-disc ml-2">
         <li>
           <span className="font-semibold">Vite:</span> For the development.
         </li>
@@ -36,14 +38,16 @@ const Project1Details = () => {
         </li>
       </ul>
 
-      <p className="leading-loose mt-4">Key Features:</p>
-      <ul className="list-inside list-disc ml-2">
+      <p className="leading-loose mt-4  italic font-semibold">Key Features:</p>
+      <ul className="list-outside list-disc ml-2">
         <li>Interactive lessons and exercises</li>
         <li>Progress tracking and completion status</li>
         <li>Step-by-step solutions and explanations</li>
       </ul>
-      <p className="leading-loose mt-4">Challenges Overcome:</p>
-      <ul className="list-inside list-disc ml-2">
+      <p className="leading-loose mt-4  italic font-semibold">
+        Challenges Overcome:
+      </p>
+      <ul className="list-outside list-disc ml-2">
         <li>Ensuring responsive design for different devices</li>
         <li>Implementing state management for complex interactions</li>
       </ul>

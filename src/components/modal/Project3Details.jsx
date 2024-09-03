@@ -2,12 +2,14 @@
 const Project3Details = () => {
   return (
     <div>
-      <p className="leading-relaxed font-semibold mb-2">
+      <p className="leading-relaxed mb-2">
         The Expense Share App is designed to simplify the process of tracking
         and splitting expenses among friends, family, or colleagues.
       </p>
-      <p className="leading-loose">Key technologies and topics used:</p>
-      <ul className="list-inside list-disc ml-2">
+      <p className="leading-loose  italic font-semibold">
+        Key technologies and topics:
+      </p>
+      <ul className="list-outside list-disc ml-2">
         <li>
           <span className="font-semibold">React:</span> To build the user
           interface.
@@ -38,14 +40,16 @@ const Project3Details = () => {
         </li>
       </ul>
 
-      <p className="leading-loose mt-4">Key Features:</p>
-      <ul className="list-inside list-disc ml-2">
+      <p className="leading-loose mt-4  italic font-semibold">Key Features:</p>
+      <ul className="list-outside list-disc ml-2">
         <li>Expense tracking and splitting</li>
         <li>Interactive and easy-to-use interface</li>
       </ul>
 
-      <p className="leading-loose mt-4">Challenges Overcome:</p>
-      <ul className="list-inside list-disc ml-2">
+      <p className="leading-loose mt-4  italic font-semibold">
+        Challenges Overcome:
+      </p>
+      <ul className="list-outside list-disc ml-2">
         <li>Handling real-time data updates</li>
       </ul>
     </div>
