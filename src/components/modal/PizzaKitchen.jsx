@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-const Project0Details = () => {
+const PizzaKitchen = () => {
   return (
     <div>
       <p className="leading-relaxed mb-2">
@@ -73,4 +73,4 @@ const Project0Details = () => {
   );
 };
 
-export default Project0Details;
+export default PizzaKitchen;

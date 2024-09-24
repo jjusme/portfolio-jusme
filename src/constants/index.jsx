@@ -15,6 +15,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 
 import {
   SiAxios,
+  SiExpress,
   SiGit,
   SiReactrouter,
   SiRedux,
@@ -30,11 +31,6 @@ import {
 } from "react-icons/fa";
 import { BiLogoGmail, BiLogoJavascript } from "react-icons/bi";
 
-import image1 from "../assets/juniorspizza.jpg";
-import image2 from "../assets/dsaApp.jpg";
-import image3 from "../assets/aluraflix.jpg";
-import image4 from "../assets/expense.jpg";
-
 import { VscVscode } from "react-icons/vsc";
 import { FcSmartphoneTablet } from "react-icons/fc";
 import { BsDatabaseFillGear, BsFillMusicPlayerFill } from "react-icons/bs";
@@ -42,10 +38,15 @@ import { GiBookCover, GiMeditation, GiPuzzle } from "react-icons/gi";
 import { LiaSearchPlusSolid } from "react-icons/lia";
 import { CgGym } from "react-icons/cg";
 import { TbBinaryTree } from "react-icons/tb";
-import Project2Details from "../components/modal/Project2Details";
-import Project1Details from "../components/modal/Project1Details";
-import Project3Details from "../components/modal/Project3Details";
-import Project0Details from "../components/modal/Project0Details";
+import AuthMaster from "../components/modal/AuthMaster";
+import UserGen from "../components/modal/UserGen";
+import PizzaKitchen from "../components/modal/PizzaKitchen";
+import DSALearn from "../components/modal/DSALearn";
+
+import imgAuthmaster from "../assets/authmaster.jpg";
+import imgUserGen from "../assets/usergen.jpg";
+import imgPizza from "../assets/juniorspizza.jpg";
+import imgDSA from "../assets/dsaApp.jpg";
 
 export const NAVIGATION_LINKS = [
   { label: "About", href: "#about" },
@@ -103,7 +104,11 @@ export const TECHNICAL_SKILLS = [
     name: "Styled-components",
     icon: <SiStyledcomponents className="text-4xl text-amber-600" />,
   },
-  { name: "Node.js", icon: <FaNodeJs className="text-4xl text-green-700" /> },
+  { name: "NodeJs", icon: <FaNodeJs className="text-4xl text-green-700" /> },
+  {
+    name: "ExpressJS",
+    icon: <SiExpress className="text-4xl text-slate-400" />,
+  },
   { name: "Axios", icon: <SiAxios className="text-4xl text-indigo-700" /> },
   {
     name: "React Router",
@@ -174,36 +179,36 @@ export const SOFT_SKILLS = [
 
 export const PROJECTS = [
   {
+    title: "AuthMaster",
+    subtitle: "Full-stack user management system...",
+    thumbnail: imgAuthmaster,
+    previewLink: "https://authmaster-user-management.vercel.app/",
+    repoLink: "https://github.com/JusmeJr93/user-management-app",
+    details: <AuthMaster />,
+  },
+  {
+    title: "UserGen Pro",
+    subtitle: "Full-stack app to generate random data...",
+    thumbnail: imgUserGen,
+    previewLink: "https://user-gen-pro.vercel.app/",
+    repoLink: "https://github.com/JusmeJr93/random-user-data-generator",
+    details: <UserGen />,
+  },
+  {
     title: "Junior's Pizza Kitchen",
     subtitle: "Responsive pizza ordering web app...",
-    thumbnail: image1,
+    thumbnail: imgPizza,
     previewLink: "https://juniors-pizza-kitchen.vercel.app/",
     repoLink: "https://github.com/JusmeJr93/juniors-pizza-kitchen",
-    details: <Project0Details />,
+    details: <PizzaKitchen />,
   },
   {
     title: "DSA Learning App",
     subtitle: "React App to learn and practice DSA...",
-    thumbnail: image2,
+    thumbnail: imgDSA,
     previewLink: "https://dsa-learning-with-js.vercel.app/",
     repoLink: "https://github.com/JusmeJr93/dsa-learning-with-js",
-    details: <Project1Details />,
-  },
-  {
-    title: "AluraFlix",
-    subtitle: "Educational video platform...",
-    thumbnail: image3,
-    previewLink: "https://challenge-aluraflix-nine.vercel.app/",
-    repoLink: "https://github.com/JusmeJr93/challenge-aluraflix",
-    details: <Project2Details />,
-  },
-  {
-    title: "Expense Share App",
-    subtitle: "Tool to manage shared expenses...",
-    thumbnail: image4,
-    previewLink: "https://expense-share.vercel.app/",
-    repoLink: "https://github.com/JusmeJr93/expense-share",
-    details: <Project3Details />,
+    details: <DSALearn />,
   },
 ];
 

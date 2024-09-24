@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-const Project1Details = () => {
+const DSALearn = () => {
   return (
     <div>
       <p className="leading-relaxed mb-2">
@@ -55,4 +55,4 @@ const Project1Details = () => {
   );
 };
 
-export default Project1Details;
+export default DSALearn;

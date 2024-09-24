@@ -39,7 +39,7 @@ const Home = () => {
               Junior Jusmé
             </h1>
             <h2 className="pt-2 text-xl md:text-3xl font-semibold">
-              React Frontend Developer
+              React Web Developer
             </h2>
 
             <div className="flex items-center gap-8 mt-3 ">
