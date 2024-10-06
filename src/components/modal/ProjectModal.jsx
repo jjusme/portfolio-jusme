@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import Modal from "react-modal";
 
 const ProjectModal = ({ isOpen, onRequestClose, project }) => {
@@ -11,6 +12,8 @@ const ProjectModal = ({ isOpen, onRequestClose, project }) => {
       document.body.style.overflow = "unset";
     }
   }, [isOpen]);
+
+  const { t } = useTranslation();
 
   return (
     <Modal
@@ -24,12 +27,12 @@ const ProjectModal = ({ isOpen, onRequestClose, project }) => {
         <h2 className="text-2xl font-bold text-center mb-3 text-gray-900">
           {project.title}
         </h2>
-        <p className="text-base text-gray-800 ">{project.details}</p>
+        <div className="text-base text-gray-800 ">{project.details}</div>
         <button
           onClick={onRequestClose}
-          className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          className="mt-4 self-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
         >
-          Close
+          {t("projects.close_modal")}
         </button>
       </div>
     </Modal>

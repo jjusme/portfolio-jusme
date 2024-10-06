@@ -1,10 +1,13 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import brand from "../assets/brandJr.png";
-import { NAVIGATION_LINKS } from "../constants";
 import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa6";
+import LanguageSwitcher from "../LanguageSwitcher";
 
 const Navbar = () => {
+  const { t } = useTranslation();
+
   //toggle menu for mobile
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -30,6 +33,15 @@ const Navbar = () => {
     setIsMobileMenuOpen(false);
   };
 
+  const translatedLinks = [
+    { label: t("navbar.about"), href: "#about" },
+    { label: t("navbar.skills"), href: "#skills" },
+    { label: t("navbar.projects"), href: "#projects" },
+    { label: t("navbar.experience"), href: "#experience" },
+    { label: t("navbar.hobbies"), href: "#hobbies" },
+    { label: t("navbar.contact"), href: "#contact" },
+  ];
+
   return (
     <div>
       <nav className="fixed flex justify-center min-w-full left-0 right-0 top-0 z-50  bg-black/50 backdrop-blur ">
@@ -42,12 +54,12 @@ const Navbar = () => {
               </a>
             </div>
 
-            <div>
-              <ul className="flex items-center gap-6">
-                {NAVIGATION_LINKS.map((item, index) => (
+            <div className="flex items-center">
+              <ul className="flex items-center gap-2 lg:gap-4">
+                {translatedLinks.map((item, index) => (
                   <li key={index}>
                     <a
-                      className="text-lg hover:text-yellow-600"
+                      className="text-lg  lg:text-xl hover:text-yellow-600"
                       href={item.href}
                       onClick={(e) => handleLinkClick(e, item.href)}
                     >
@@ -56,6 +68,7 @@ const Navbar = () => {
                   </li>
                 ))}
               </ul>
+              <LanguageSwitcher />
             </div>
           </div>
         </div>
@@ -79,11 +92,12 @@ const Navbar = () => {
                   <FaBars className="m-2 h-6 w-5" />
                 )}
               </button>
+              <LanguageSwitcher />
             </div>
           </div>
           {isMobileMenuOpen && (
             <ul className="container mx-auto mt-4 flex-col gap-4 backdrop-blur-md">
-              {NAVIGATION_LINKS.map((item, index) => (
+              {translatedLinks.map((item, index) => (
                 <li key={index}>
                   <a
                     className="block text-xl font-semibold"

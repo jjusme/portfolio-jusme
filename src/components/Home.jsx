@@ -1,11 +1,18 @@
 import homePic from "../assets/developer.jpg";
 import myPhoto from "../assets/JusmeJr.jpg";
 import myCV from "../assets/Junior-Jusme-React-Developer.pdf";
+import myCVEsp from "../assets/Junior-Jusme-Desarrollador-React.pdf";
 import { motion } from "framer-motion";
 import { SOCIAL_MEDIA_LINKS } from "../constants";
 import { FaDownload } from "react-icons/fa6";
+import { useTranslation } from "react-i18next";
+import i18n from "../i18n";
 
 const Home = () => {
+  const { t } = useTranslation();
+
+  const cvLink = i18n.language === "en" ? myCV : myCVEsp;
+
   return (
     <>
       <div
@@ -36,10 +43,10 @@ const Home = () => {
         >
           <div className="flex flex-col justify-center">
             <h1 className="text-3xl  md:text-5xl font-semibold uppercase tracking-wide">
-              Junior Jusmé
+              {t("home.name")}
             </h1>
             <h2 className="pt-2 text-xl md:text-3xl font-semibold">
-              React Web Developer
+              {t("home.title")}
             </h2>
 
             <div className="flex items-center gap-8 mt-3 ">
@@ -60,7 +67,7 @@ const Home = () => {
               ))}
               <motion.a
                 download
-                href={myCV}
+                href={cvLink}
                 target="_blank"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -68,7 +75,7 @@ const Home = () => {
               >
                 <button className="flex gap-2 items-center border border-transparent rounded-md py-1 px-3 hover:bg-black hover:text-blue-500 hover:font-semibold">
                   <FaDownload />
-                  CV
+                  {t("home.cv")}
                 </button>
               </motion.a>
             </div>

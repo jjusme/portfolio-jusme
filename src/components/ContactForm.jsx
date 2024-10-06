@@ -2,6 +2,7 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -11,6 +12,8 @@ const ContactForm = () => {
   });
   const [errors, setErrors] = useState({});
   const [isSending, setIsSending] = useState(false);
+
+  const { t } = useTranslation();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -50,7 +53,7 @@ const ContactForm = () => {
         )
         .then((respone) => {
           console.log("SUCCESS!", respone.status, respone.text);
-          toast.success("Message sent successfully!");
+          toast.success(t("contact.toast_success"));
           setFormData({
             name: "",
             email: "",
@@ -59,7 +62,7 @@ const ContactForm = () => {
         })
         .catch((error) => {
           console.log("FAILED...", error);
-          toast.error("Failed to send message. Please try again later");
+          toast.error(t("contact.toast_fail"));
         })
         .finally(() => {
           setIsSending(false);
@@ -71,12 +74,10 @@ const ContactForm = () => {
     <div className="mx-auto max-w-3xl p-4" id="contact">
       <Toaster />
       <h2 className="my-8 text-center text-4xl font-semibold tracking-tighter">
-        Let&apos;s connect
+        {t("contact.heading")}
       </h2>
-      <p className="mb-8  text-lg leading-relaxed">
-        If you have a project in mind or want to discuss an idea, feel free to
-        write me to chat about how we can collaborate together. Fill out the
-        contact form below and I&apos;ll get back to you as soon as possible.
+      <p className="mb-8  text-lg lg:text-xl leading-relaxed">
+        {t("contact.paragraph")}
       </p>
       <motion.form
         onSubmit={handleSubmit}
@@ -100,7 +101,7 @@ const ContactForm = () => {
             id="name"
             name="name"
             value={formData.name}
-            placeholder="Name"
+            placeholder={t("contact.name_placeholder")}
             onChange={handleChange}
             className="mb-8 w-full appearance-none rounded-lg border border-gray-900 bg-transparent px-3 py-2 text-sm focus:border-gray-400 focus:outline-none"
           />
@@ -122,7 +123,7 @@ const ContactForm = () => {
             id="email"
             name="email"
             value={formData.email}
-            placeholder="Email"
+            placeholder={t("contact.email_placeholder")}
             onChange={handleChange}
             className="mb-8 w-full appearance-none rounded-lg border border-gray-900 bg-transparent px-3 py-2 text-sm focus:border-gray-400 focus:outline-none"
           />
@@ -143,7 +144,7 @@ const ContactForm = () => {
             id="message"
             name="message"
             value={formData.message}
-            placeholder="Message"
+            placeholder={t("contact.message_placeholder")}
             onChange={handleChange}
             className="mb-8 w-full appearance-none rounded-lg border border-gray-900 bg-transparent resize-none px-3 py-2 text-sm focus:border-gray-400 focus:outline-none"
             rows="4"
@@ -157,7 +158,7 @@ const ContactForm = () => {
           }`}
           disabled={isSending}
         >
-          {isSending ? "Sending..." : "Send"}
+          {isSending ? t("contact.sending") : t("contact.send")}
         </button>
       </motion.form>
     </div>

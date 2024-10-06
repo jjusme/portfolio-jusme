@@ -1,0 +1,119 @@
+{
+  "navbar": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "hobbies": "Hobbies",
+    "contact": "Contact"
+  },
+  "home": {
+    "name": "Junior Jusmé",
+    "title": "React Web Developer",
+    "cv": "CV",
+    "connect": "Let's connect"
+  },
+  "about": {
+    "heading": "About",
+    "paragraph1": "React Developer with more than 2 years of experience in developing innovative solutions to build dynamic, responsive, and accessible websites that tell stories tailored to my clients' needs.",
+    "paragraph2": "I am passionate about creating digital experiences that are both beautiful and functional. With a background in civil engineering, I have a solid foundation in problem-solving and critical thinking.",
+    "paragraph3": "My curiosity and commitment to continuous learning enable me to grow personally and professionally. I stay up-to-date with technological and design trends by constantly exploring new tools, techniques, and methodologies. I am dedicated to bringing practical and innovative solutions to every challenge.",
+    "paragraph4": "Merging my technical skills with my creative vision, I take pride in writing clean, efficient code and following best practices.",
+    "paragraph5": "As a team player, I possess excellent communication and collaboration skills. I enjoy working in dynamic environments where ideas can be freely exchanged and creativity is encouraged."
+  },
+  "skills": {
+    "heading": "Skills",
+    "technical": "Technical Skills",
+    "soft": "Soft Skills",
+    "soft_skills": {
+      "soft2": "Problem-solving",
+      "soft3": "Critical thinking",
+      "soft4": "Fast Learner",
+      "soft5": "Teamwork and collaboration",
+      "soft6": "Communication",
+      "soft7": "Adaptability",
+      "soft8": "Time management",
+      "soft9": "Attention to detail"
+    }
+  },
+  "projects": {
+    "heading": "Personal Projects",
+    "description": "Explore a selection of my projects, showcasing my skills. Each project demonstrates my ability to solve problems, implement modern technologies, and deliver solutions that meet user needs. Dive in to see how I bring ideas to life through code.",
+    "details": "More details",
+    "preview": "Preview",
+    "repo": "Repository",
+    "close_modal": "Close",
+    "technologies": "Key technologies and topics",
+    "subtitle1": "Full-stack user management system...",
+    "subtitle2": "Full-stack app to generate random data...",
+    "subtitle3": "Pizza ordering web application...",
+    "subtitle4": "Web app to learn and practice DSA...",
+    "project1": "Full-stack user management system to manage user accounts through actions such as registration, login, and updating user information.",
+    "project2": "Full-stack app to generate random user data. With customize parameters such as region, seed, and error rate, and easily export the generated data as a CSV file.",
+    "project3": "Pizza ordering web app with clean UI, smooth animations, and robust state management. Users can create, update, and manage their pizza orders. Prices are adjusted based on order priority. And user can quickly navigate to the order page and check their order status. Address can be obtained with the 'Get Position' button, which utilizes user GPS.",
+    "project4": "This App is designed to help beginners understand and practice Data Structures and Algorithms through interactive lessons and exercises. With Progress tracking and completion status. Step-by-step explanations and solutions."
+  },
+  "work": {
+    "heading": "Work Experience",
+    "company": "Upload",
+    "description": "I worked on several projects, as a Freelance Frontend Developer, for the technological company UPLOAD for almost 2 years where I was responsible for:",
+    "responsibilities": [
+      "Project Planning and Requirement Gathering.",
+      "Write clean, efficient, and maintainable code.",
+      "Coding responsive & user-friendly interfaces.",
+      "Incorporate third-party services and libraries as needed.",
+      "Identify and fix bugs and performance issues.",
+      "Create and maintain project documentation.",
+      "Collect and integrate feedback from clients.",
+      "Work with other team members, such as backend developers, designers, and project managers."
+    ],
+    "client_contact": "Client Contact",
+    "website": "Website",
+    "phone": "Phone",
+    "email": "Email",
+    "projects_overview": "Projects Overview",
+    "overview_intro": "While I have worked on numerous projects with that company, due to client privacy, intellectual property rights, non-disclosure agreements (NDAs) and security concerns, I am unable to share detailed information and repositories of many of these projects.However, here are two projects that I am allowed to partially showcase:",
+    "project1": {
+      "title": "Project 1: School Management Software",
+      "descript": "Description",
+      "description": "A comprehensive School Management Software (SMS) application designed to streamline various administrative tasks within a school environment. It includes features for secure login, advanced reporting, file management, and dynamic data representation.",
+      "technologies": "Technologies Used",
+      "role": "Role",
+      "role_description": "As a frontend developer, I was responsible for designing and implementing the user interface, integrating various features such as secure login and file management, and ensuring a smooth user experience with robust validation and error handling."
+    },
+    "project2": {
+      "title": "Project 2: Up Learning",
+      "descript": "Description",
+      "description": "Up Learning is an e-learning platform designed to provide educational content in Haitian Creole. The application features a user-friendly interface for accessing courses, a responsive layout for all devices, and integration with social media for community engagement. The platform includes modules for user registration, course management, and interactive learning.",
+      "technologies": "Technologies Used",
+      "role": "Role",
+      "role_description": "As a frontend developer, I was responsible for designing and implementing the user interface, ensuring responsive design across devices, integrating user authentication and progress tracking, implementing video streaming and interactive course modules. I also worked on creating interactive elements and optimizing the platform for better user engagement and accessibility."
+    }
+  },
+  "hobbies": {
+    "heading": "Hobbies",
+    "paragraph": "Outside of work, my hobbies are a major source of my creativity and inspiration. Here are some of my main hobbies that keep me motivated and full of fresh ideas:",
+    "title1": "Active Lifestyle",
+    "title2": "Reading",
+    "title3": "Podcasts and music",
+    "title4": "Meditation and mindfulness",
+    "description1": "My commitment to a healthy and active lifestyle is reflected in my daily routine. I combine strength training with outdoor activities and sports such as basketball and boxing. It has built my physical and mental endurance, essential for overcoming work challenges.",
+    "description2": "Reading is a passion that nourishes my mind and allows me to explore diverse perspectives. Through books on programming and personal development, I have gained valuable knowledge that I apply in my daily work.",
+    "description3": "Podcasts and music are a constant source of inspiration. Listening to different podcasts about technology and entrepreneurship and music genres helps me to stay up-to-date and develop my critical thinking.",
+    "description4": "Meditation and mindfulness are a fundamental part of my daily routine. These practices allow me to manage stress, improve my concentration and make better decisions."
+  },
+  "contact": {
+    "heading": "Let's connect",
+    "paragraph": "If you are looking for the right talent for your company or want to discuss an idea, feel free to write me to chat about how we can collaborate together. Fill out the contact form below and I'll get back to you as soon as possible.",
+    "name_placeholder": "Name",
+    "email_placeholder": "Email",
+    "message_placeholder": "Message",
+    "send": "Send",
+    "sending": "Sending...",
+    "toast_success": "Message sent successfully!",
+    "toast_fail": "Failed to send message. Please try again later"
+  },
+  "footer": {
+    "rights": "2024. All rights reserved."
+  }
+}

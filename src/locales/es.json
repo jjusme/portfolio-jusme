@@ -1,0 +1,119 @@
+{
+  "navbar": {
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "hobbies": "Pasatiempos",
+    "contact": "Contacto"
+  },
+  "home": {
+    "name": "Junior Jusmé",
+    "title": "Desarrollador Web React",
+    "cv": "CV",
+    "connect": "Conectemos"
+  },
+  "about": {
+    "heading": "Sobre mí",
+    "paragraph1": "Soy Desarrollador React con más de 2 años de experiencia implementando soluciones innovadoras para crear sitios web dinámicos, responsivos y accesibles que cuenten historias que se adaptan a las necesidades de mis clientes.",
+    "paragraph2": "Me apasiona crear experiencias digitales que sean a la vez estéticas y funcionales. Con formación en ingeniería civil, tengo una sólida base en resolución de problemas y pensamiento crítico.",
+    "paragraph3": "Mi curiosidad y compromiso con el aprendizaje continuo me permiten crecer personal y profesionalmente. Me mantengo al día con las tendencias tecnológicas explorando constantemente nuevas herramientas, técnicas y metodologías para aportar soluciones prácticas e innovadoras a cada proyecto.",
+    "paragraph4": "Combinando mis habilidades técnicas con mi visión creativa, me enorgullezco de programar código limpio y eficiente siguiendo las mejores prácticas.",
+    "paragraph5": "Cuento con excelentes aptitudes para la comunicación y la colaboración, lo que me permite trabajar bien en equipo. Me gusta trabajar en entornos dinámicos en los que se puedan intercambiar ideas libremente y se fomente la creatividad."
+  },
+  "skills": {
+    "heading": "Habilidades",
+    "technical": "Habilidades Técnicas",
+    "soft": "Habilidades Generales",
+    "soft_skills": {
+      "soft2": "Resolución de problemas",
+      "soft3": "Pensamiento crítico",
+      "soft4": "Aprendizaje rápido",
+      "soft5": "Trabajo en equipo",
+      "soft6": "Comunicación",
+      "soft7": "Adaptabilidad",
+      "soft8": "Gestión eficaz del tiempo",
+      "soft9": "Atención minuciosa"
+    }
+  },
+  "projects": {
+    "heading": "Proyectos Personales",
+    "description": "En esta sección se puede explorar una selección de mis proyectos que demuestran mi capacidad para resolver problemas, aplicar tecnologías modernas para convertir ideas en realidad a través del código y ofrecer soluciones que satisfagan las necesidades de los usuarios.",
+    "details": "Más detalles",
+    "preview": "Visualizar",
+    "repo": "Repositorio",
+    "close_modal": "Cerrar",
+    "technologies": "Principales tecnologías y temas",
+    "subtitle1": "Full-stack app para gestión de usuarios...",
+    "subtitle2": "Full-stack app para generar datos aleatorios...",
+    "subtitle3": "Aplicación web para encargar pizzas...",
+    "subtitle4": "App para aprender y practicar Algoritmos y...",
+    "project1": "Full-stack app para gestionar cuentas de usuario mediante acciones como el registro, el inicio de sesión y la actualización de la información de usuario.",
+    "project2": "Full-stack app para generar datos aleatorios de usuarios. Con parámetros personalizables y exportar fácilmente los datos generados como archivo CSV.",
+    "project3": "Aplicación web para ordenar pizzas con una interfaz de usuario limpia, animaciones fluidas y una sólida gestión de estados. Los usuarios pueden crear, actualizar y gestionar sus pedidos de pizza. Los precios se ajustan en función de la prioridad del pedido. Y el usuario puede navegar rápidamente a la página del pedido y consultar su estado. La dirección puede obtenerse con el botón 'Get Position', que utiliza el GPS del usuario.",
+    "project4": "App diseñada para ayudar a los principiantes a entender y practicar Algoritmos y Estructuras de Datos a través de lecciones y ejercicios interactivos. Con Progreso y estado de finalización. Explicaciones y soluciones paso a paso."
+  },
+  "work": {
+    "heading": "Experiencia Laboral",
+    "company": "Upload",
+    "description": "Durante casi 2 años trabajé en varios proyectos, como Desarrollador Frontend Freelance, para la empresa tecnológica UPLOAD donde mis principales responsabilidades eran:",
+    "responsibilities": [
+      "Planificación de proyectos y recopilación de requisitos.",
+      "Escribir código limpio, eficiente y mantenible.",
+      "Codificar interfaces responsivas y amigables para el usuario.",
+      "Incorporar servicios y bibliotecas de terceros según sea necesario.",
+      "Identificar y solucionar errores y problemas de rendimiento.",
+      "Crear y mantener la documentación del proyecto.",
+      "Recopilar e integrar comentarios de los clientes.",
+      "Trabajar con otros miembros del equipo, como desarrolladores backend, diseñadores y gerentes de proyectos."
+    ],
+    "client_contact": "Contacto del Cliente",
+    "website": "Sitio Web",
+    "phone": "Teléfono",
+    "email": "Correo Electrónico",
+    "projects_overview": "Resumen de Proyectos",
+    "overview_intro": "Aunque he trabajado en numerosos proyectos con esa empresa, debido a los acuerdos de no-divulgación y las políticas de privacidad, no puedo compartir la información detallada y los repositorios de muchos de esos proyectos. Sin embargo, aquí hay dos proyectos que se me permite mostrar parcialmente:",
+    "project1": {
+      "title": "Proyecto 1: Software de Gestión Escolar",
+      "descript": "Descripción",
+      "description": "Una aplicación integral de Software de Gestión Escolar (SMS) diseñada para agilizar diversas tareas administrativas dentro de un entorno escolar. Incluye funciones para inicio de sesión seguro, informes avanzados, gestión de archivos y representación dinámica de datos.",
+      "technologies": "Tecnologías Utilizadas",
+      "role": "Función",
+      "role_description": "Como desarrollador frontend, me encargué de diseñar e implementar la interfaz de usuario, integrar diversas funciones como el inicio de sesión seguro y la gestión de archivos, y garantizar una experiencia de usuario fluida con una sólida validación y gestión de errores."
+    },
+    "project2": {
+      "title": "Proyecto 2: Up Learning",
+      "descript": "Descripción",
+      "description": "Up Learning es una plataforma de e-learning diseñada para proporcionar contenido educativo en criollo haitiano. La aplicación presenta una interfaz fácil de usar para acceder a cursos, un diseño responsivo para todos los dispositivos e integración con redes sociales para la participación comunitaria. La plataforma incluye módulos para registro de usuarios, gestión de cursos y aprendizaje interactivo.",
+      "technologies": "Tecnologías Utilizadas",
+      "role": "Función",
+      "role_description": "En este proyecto, mi función consistía en diseñar e implementar la interfaz de usuario, garantizar un diseño adaptable a todos los dispositivos, integrar la autenticación de usuarios y el seguimiento del progreso, e implementar la transmisión de vídeo y los módulos interactivos del curso. También trabajé en la creación de elementos interactivos y en la optimización de la plataforma para mejorar la interacción del usuario y la accesibilidad."
+    }
+  },
+  "hobbies": {
+    "heading": "Pasatiempos",
+    "paragraph": "Fuera del trabajo, mis pasatiempos son mis principales fuentes de creatividad e inspiración. Aquí están algunos de los pasatiempos que me mantienen motivado y lleno de ideas frescas:",
+    "title1": "Estilo de vida activo",
+    "title2": "Leer",
+    "title3": "Podcasts y música",
+    "title4": "Meditación y mindfulness",
+    "description1": "Mi compromiso con un estilo de vida activo y saludable se refleja en mi rutina diaria. Combino el entrenamiento de fuerza con actividades al aire libre y deportes como el baloncesto y el boxeo. Así adquiero resistencia física y mental, esencial para superar los retos laborales.",
+    "description2": "Leer es una pasión que nutre mi mente y me permite explorar diversas perspectivas. A través de libros sobre programación y desarrollo personal, he adquirido valiosos conocimientos que aplico en mi trabajo diario.",
+    "description3": "La música y los podcasts son una fuente constante de inspiración. Escuchar distintos podcasts sobre tecnología y emprendimiento me ayuda a estar al día y a desarrollar mi pensamiento crítico.",
+    "description4": "La meditación y el mindfulness son una parte fundamental de mi rutina diaria. Estas prácticas me permiten controlar de manera más eficaz el estrés para mejorar mi concentración y tomar mejores decisiones."
+  },
+  "contact": {
+    "heading": "Contáctame",
+    "paragraph": "Si estás buscando el talento adecuado para tu empresa o quieres discutir una idea, no dudes en ponerte en contacto conmigo para ver cómo podemos colaborar juntos. Rellena el siguiente formulario y me pondré en contacto contigo lo antes posible.",
+    "name_placeholder": "Nombre",
+    "email_placeholder": "Correo Electrónico",
+    "message_placeholder": "Mensaje",
+    "send": "Enviar",
+    "sending": "Enviando...",
+    "toast_success": "¡El mensaje se ha enviado con éxito!",
+    "toast_fail": "No se ha podido enviar el mensaje. Vuelva a intentarlo más tarde"
+  },
+  "footer": {
+    "rights": "2024. Todos los derechos reservados."
+  }
+}

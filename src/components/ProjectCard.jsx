@@ -2,9 +2,12 @@
 
 import { useState } from "react";
 import ProjectModal from "./modal/ProjectModal";
+import { useTranslation } from "react-i18next";
 
 const ProjectCard = ({ project }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const { t } = useTranslation();
 
   const openModal = () => {
     setModalIsOpen(true);
@@ -32,7 +35,7 @@ const ProjectCard = ({ project }) => {
             title="Clic for more details"
             className="text-blue-500 underline hover:font-bold "
           >
-            More Details
+            {t("projects.details")}
           </button>
         </p>
       </div>
@@ -43,7 +46,7 @@ const ProjectCard = ({ project }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Preview
+          {t("projects.preview")}
         </a>
         <a
           href={project.repoLink}
@@ -51,11 +54,10 @@ const ProjectCard = ({ project }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Repository
+          {t("projects.repo")}
         </a>
       </div>
 
-      {/*More details Modal */}
       <ProjectModal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}

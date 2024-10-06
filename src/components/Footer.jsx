@@ -1,8 +1,11 @@
 import { SOCIAL_MEDIA_LINKS } from "../constants";
 import { motion } from "framer-motion";
 import logo from "../assets/JJ.png";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="mb-8 mt-20">
       <div className="flex items-center justify-center gap-8">
@@ -24,7 +27,7 @@ const Footer = () => {
       <div className="flex gap-2 mt-4 justify-center align-center">
         <img src={logo} alt="logo" className="w-5 h-5" />
         <p className="text-sm tracking-wide text-gray-400">
-          2024. All rights reserved.
+          {t("footer.rights")}
         </p>
       </div>
     </div>
