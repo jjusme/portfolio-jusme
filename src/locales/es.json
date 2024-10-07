@@ -56,7 +56,7 @@
   "work": {
     "heading": "Experiencia Laboral",
     "company": "Upload",
-    "description": "Durante casi 2 años trabajé en varios proyectos, como Desarrollador Frontend Freelance, para la empresa tecnológica UPLOAD donde mis principales responsabilidades eran:",
+    "description": "Durante casi 2 años trabajé en varios proyectos, como Desarrollador Frontend, para la empresa tecnológica UPLOAD donde mis principales responsabilidades eran:",
     "responsibilities": [
       "Planificación de proyectos y recopilación de requisitos.",
       "Escribir código limpio, eficiente y mantenible.",
@@ -72,7 +72,7 @@
     "phone": "Teléfono",
     "email": "Correo Electrónico",
     "projects_overview": "Resumen de Proyectos",
-    "overview_intro": "Aunque he trabajado en numerosos proyectos con esa empresa, debido a los acuerdos de no-divulgación y las políticas de privacidad, no puedo compartir la información detallada y los repositorios de muchos de esos proyectos. Sin embargo, aquí hay dos proyectos que se me permite mostrar parcialmente:",
+    "overview_intro": "Trabajé en numerosos proyectos con esa empresa pero debido a los acuerdos de no-divulgación y las políticas de privacidad, no puedo compartir la información detallada y los repositorios de muchos de esos proyectos. Sin embargo, aquí hay dos proyectos que se me permite mostrar parcialmente:",
     "project1": {
       "title": "Proyecto 1: Software de Gestión Escolar",
       "descript": "Descripción",
