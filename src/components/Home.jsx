@@ -73,9 +73,9 @@ const Home = () => {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 2 }}
               >
-                <button className="flex gap-2 items-center border border-transparent rounded-md py-1 px-3 hover:bg-black hover:text-blue-500 hover:font-semibold">
+                <button title={t("home.cv")} className="flex gap-2 items-center border border-transparent rounded-md py-1 px-3 hover:bg-black hover:text-blue-500 hover:font-semibold">
                   <FaDownload />
-                  {t("home.cv")}
+                  CV
                 </button>
               </motion.a>
             </div>
